@@ -24,12 +24,12 @@
 
 .ProductDetailsCard__specifications {
     display: flex;
+    gap: 1rem;
 }
 
 .Spec {
     display: flex;
     gap: 0.25rem;
-    border: 1px dashed red;
 }
 
 /*.Spec p,*/
@@ -38,5 +38,5 @@
 /*}*/
 
 .Icon {
-    flex-basis: 1rem;
+    width: 16px;
 }
