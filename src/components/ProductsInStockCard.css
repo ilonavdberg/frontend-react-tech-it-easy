@@ -1,0 +1,25 @@
+.ProductsInStockCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 300px;
+
+    height: 250px;
+    background-color: #f9e4e4;
+    color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+.ProductsInStockCard p {
+    margin: 0 40px;
+    /*border: 2px dashed red;*/
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ProductsInStockCard p:last-child {
+    font-size: 2rem;
+}

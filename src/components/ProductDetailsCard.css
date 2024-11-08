@@ -1,0 +1,42 @@
+.ProductDetailsCard {
+    display: flex;
+    align-items: center;
+    background: #ebebeb;
+    max-width: calc(300px * 3 + 3rem * 2);
+    border: 1px dashed #555555;
+    border-radius: 4px;
+    margin: 1rem 0;
+    padding: 0 3rem;
+    font-size: 1.2rem;
+}
+
+.ProductDetailsCard figure {
+    flex-basis: 250px;
+}
+
+.ProductDetailsCard__content > * {
+    margin: 2rem 0 2rem 2rem;
+}
+
+.ProductDetailsCard__price {
+    font-size: 1.5rem;
+}
+
+.ProductDetailsCard__specifications {
+    display: flex;
+}
+
+.Spec {
+    display: flex;
+    gap: 0.25rem;
+    border: 1px dashed red;
+}
+
+/*.Spec p,*/
+/*.Spec span {*/
+/*    border: 1px dashed black;*/
+/*}*/
+
+.Icon {
+    flex-basis: 1rem;
+}
