@@ -1,0 +1,24 @@
+.ProductCatalog {
+    display: flex;
+    align-items: center;
+    max-width: calc(300px * 3 + 3rem * 2);
+    margin: 1rem 0;
+    padding: 0 3rem;
+}
+
+.ProductCatalog__image {
+    flex-basis: 250px;
+}
+
+.ProductCatalog__content > * {
+    margin: 2rem 0 2rem 2rem;
+}
+
+.ProductCatalog__price {
+    font-size: 1.5rem;
+}
+
+.ProductCatalog__specifications {
+    display: flex;
+    gap: 1rem;
+}

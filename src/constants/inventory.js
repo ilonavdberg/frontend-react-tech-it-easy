@@ -328,4 +328,42 @@ export let inventory = [
     },
 ];
 
+//1a.
+const tvTypes = inventory.map(tv => tv.type);
+console.log(tvTypes);
+
+//1b.
+const soldOutTvs = inventory.filter(tv => tv.originalStock - tv.sold === 0);
+console.log(soldOutTvs);
+
+//1c.
+const tv = inventory.find(tv => tv.type === 'NH3216SMART');
+console.log(tv);
+
+//1d.
+const suitableForSport = inventory.map((tv) => {
+    let item;
+    item = {
+        name: `${tv.brand} ${tv.name}`,
+        suitable: tv.refreshRate >= 100
+    };
+    return item;
+});
+
+console.log(suitableForSport);
+
+//1e.
+const bigTvs = inventory.filter((tv) => {
+    // !! operator converts truthy to true and falsy to false
+    return !!tv.availableSizes.find(size => size >= 65);
+})
+console.log(bigTvs);
+
+//1f.
+const ambilightTvs = inventory.filter((tv) => {
+    let ambilight = tv.options.find(option => option.name === "ambiLight");
+    return ambilight.applicable;
+})
+
+console.log(ambilightTvs);
 

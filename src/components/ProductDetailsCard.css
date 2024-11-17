@@ -10,7 +10,7 @@
     font-size: 1.2rem;
 }
 
-.ProductDetailsCard figure {
+.ProductDetailsCard__image {
     flex-basis: 250px;
 }
 
