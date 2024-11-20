@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/*------------------------- 1. Global Styles ------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+/* ------------------------ 2. Typography --------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ------------------------ 3. Areas -------------------------------- */
+
+/* ---------------- 3.1 Tech it Easy Dashboard --------------------------- */
+
+.PageContainer {
+    margin: 3rem;
+}
+
+.PageContainer > section {
+    margin-bottom: 3rem;
+}
+
+.SalesDashboard {
+    display: flex;
+    gap: 3rem;
+}

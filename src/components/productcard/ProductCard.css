@@ -1,0 +1,34 @@
+.ProductCard {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 3rem;
+    max-width: calc(300px * 3 + 3rem * 2);
+}
+
+.ProductCard__image {
+    flex-basis: 250px;
+    flex-shrink: 0;
+}
+
+.ProductCard__content > * {
+    margin: 2rem 0 2rem 2rem;
+    border: 1px dashed red;
+}
+
+.ProductCard__content__price {
+    font-size: 1.5rem;
+}
+
+.ProductCard__content__specifications {
+    display: flex;
+    gap: 1rem;
+}
+
+.ProductCard.featured {
+    background: #ebebeb;
+    border: 1px dashed #555555;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
