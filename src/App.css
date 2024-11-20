@@ -44,11 +44,11 @@ h2 {
 
 /* ---------------- 3.1 Tech it Easy Dashboard --------------------------- */
 
-.page-container {
+.PageContainer {
     margin: 3rem;
 }
 
-.page-container > section {
+.PageContainer > section {
     margin-bottom: 3rem;
 }
 

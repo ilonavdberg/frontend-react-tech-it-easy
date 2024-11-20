@@ -1,7 +1,10 @@
+// Styling
 import './Specification.css';
 
+// Assets
 import checkIcon from "../../assets/check.png";
 import minusIcon from "../../assets/minus.png";
+
 
 function Specification( {name, applicable} ) {
     return (

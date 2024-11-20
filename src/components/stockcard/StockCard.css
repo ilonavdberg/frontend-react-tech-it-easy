@@ -18,19 +18,19 @@
     font-size: 2rem;
 }
 
-.green {
+.StockCard.green {
     background-color: #e4f9f2;
     color: seagreen;
     border: 1px solid seagreen;
 }
 
-.red {
+.StockCard.red {
     background-color: #f9e4e4;
     color: red;
     border: 1px solid red;
 }
 
-.blue {
+.StockCard.blue {
     background-color: #e4f7f9;
     color: royalblue;
     border: 1px solid royalblue;

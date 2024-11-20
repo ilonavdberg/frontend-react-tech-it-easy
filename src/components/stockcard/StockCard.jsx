@@ -1,4 +1,6 @@
+// Styling
 import './StockCard.css'
+
 
 export default function StockCard({cardText, quantity, variant}) {
     const classNames = `StockCard ${variant}`;
