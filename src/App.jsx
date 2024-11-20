@@ -1,13 +1,17 @@
 import './App.css';
 
-import ProductsSoldCard from "./components/ProductsSoldCard.jsx";
-import ProductsPurchasedCard from "./components/ProductsPurchasedCard.jsx";
-import ProductsInStockCard from "./components/ProductsInStockCard.jsx";
-import ProductDetailsCard from "./components/ProductDetailsCard.jsx";
+import StockCard from "./components/stockcard/StockCard.jsx";
+import ProductCard from "./components/productcard/ProductCard.jsx";
 
 import "./constants/inventory.js";
-import {inventory} from "./constants/inventory.js"
+import {bestSellingTv, inventory} from "./constants/inventory.js"
 import ProductCatalog from "./components/ProductCatalog.jsx";
+import getAmountProductsSold from "./helpers/getAmountProductsSold.js";
+import getAmountProductsPurchased from "./helpers/getAmountProductsPurchased.js";
+import getAmountProductsInStock from "./helpers/getAmountProductsInStock.js";
+import getProductFullName from "./helpers/getProductFullName.js";
+import getFormattedPrice from "./helpers/getFormattedPrice.js";
+import getAvailableSizes from "./helpers/getAvailableSizes.js";
 
 function App() {
     return (
@@ -15,15 +19,35 @@ function App() {
             <h1>Tech it easy dashboard</h1>
             <section>
                 <h2>Verkoopoverzicht</h2>
-                <div className="SalesOverview">
-                    <ProductsSoldCard/>
-                    <ProductsPurchasedCard/>
-                    <ProductsInStockCard/>
+                <div className="SalesDashboard">
+                    <StockCard
+                        cardText={"Aantal verkochte producten"}
+                        quantity={getAmountProductsSold(inventory)}
+                        variant={"green"}
+                    />
+                    <StockCard
+                        cardText={"Aantal ingekochte producten"}
+                        quantity={getAmountProductsPurchased(inventory)}
+                        variant={"blue"}
+                    />
+                    <StockCard
+                        cardText={"Aantal te verkopen producten"}
+                        quantity={getAmountProductsInStock(inventory)}
+                        variant={"red"}
+                    />
                 </div>
             </section>
             <section>
                 <h2>Best verkochte tv</h2>
-                <ProductDetailsCard/>
+                <ProductCard
+                    title={getProductFullName(bestSellingTv)}
+                    price={getFormattedPrice(bestSellingTv)}
+                    sizes={getAvailableSizes(bestSellingTv)}
+                    options={bestSellingTv.options}
+                    imageSrc={bestSellingTv.sourceImg}
+                    imageAlt={"Samsung 4K TV"}
+                    variant={"featured"}
+                />
             </section>
             <section>
                 <h2>Alle TV's</h2>

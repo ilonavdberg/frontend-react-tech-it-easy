@@ -9,12 +9,6 @@ import getFormattedPrice from "../helpers/getFormattedPrice.js";
 import getAvailableSizes from "../helpers/getAvailableSizes.js";
 
 export default function ProductCatalog() {
-    // for (let i = 0; i < inventory.length; i++) {
-    //     console.log(inventory[i].brand + ' ' + inventory[i].name);
-    // }
-
-    const output = inventory.map((tv) => tv.brand + ' ' + tv.name)
-    console.log(output);
 
     return (
         inventory.map(tv => (

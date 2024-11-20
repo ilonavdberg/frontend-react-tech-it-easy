@@ -1,0 +1,8 @@
+.specification {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.icon {
+    width: 16px;
+}
